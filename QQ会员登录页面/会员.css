@@ -1,0 +1,1587 @@
+*{margin: 0;padding: 0;}
+#header{
+    width: 100%;
+    height: 110px;
+    line-height: 110px;
+    background-color:rgb(93,92,98);
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    clear: both;
+    z-index: 99;
+}
+#header a:first-of-type img {
+    width: 170px;
+    height: 105px;
+    margin-left: 52px;
+    /*border: 1px solid saddlebrown;*/
+    float: left;
+}
+#header ul{
+    float: left;
+    margin-left: 45px;
+}
+#header ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 33px;
+
+}
+#header ul li a{
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+}
+#header p{
+    float: left;
+}
+#header p a:first-of-type{
+    text-align: center;
+    display: inline-block;
+    color: rgb(194,147,43);
+    width: 104px;
+    height: 47px;
+    line-height: 47px;
+    border: 1px solid rgb(255,210,93);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+#header p a:nth-child(2){
+    text-align: center;
+    display: inline-block;
+    color: rgb(194,147,43);
+    width: 124px;
+    height: 47px;
+    line-height: 47px;
+    background-color: rgb(255,210,93);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#header p a:first-of-type:hover{background-color:rgb(255,210,93);}
+#header p a:nth-child(2):hover{
+    background:#fee588;
+    border-color:#fee588;
+}
+.section1{
+    background: url("./img/bg_1.jpg") no-repeat center;
+    width: 100%;
+    height: 834px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective:1000px;
+    overflow: hidden;
+}
+.section1-text1{
+    background: url("./img/sprites_index.png") no-repeat;
+    width: 775px;
+    height: 270px;
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 180px;
+    left: 130px;
+    animation: textl-s 1s ease 0.2s 1;
+}
+@keyframes textl-s {
+    0%{
+        transform: translateZ(500px);
+    }
+    100%{
+        transform: translateZ(0px);
+    }
+}
+.section1-text2{
+    width: 420px;
+    height: 121px;
+    background: url("./img/sprites_index.png") no-repeat -588px -266px;
+    position: absolute;
+    top: 386px;
+    left: 150px;
+    z-index: 5;
+    opacity: 0;
+    animation: textd-a 1s ease 0.2s 1 both;
+}
+@keyframes textd-a {
+    0%{
+        transform: translateY(121px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+.open-vip a:first-of-type{
+    text-align: center;
+    display: inline-block;
+    color: rgb(194,147,43);
+    width: 174px;
+    height: 47px;
+    line-height: 47px;
+    border: 1px solid rgb(255,210,93);
+    border-radius: 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 500px;
+    left: 153px;
+    opacity: 0;
+    animation: textd-a 1s ease 0.2s 1 both;
+    z-index: 5;
+}
+.open-vip a:nth-child(2){
+    text-align: center;
+    display: inline-block;
+    color: rgb(194,147,43);
+    width: 174px;
+    height: 47px;
+    line-height: 47px;
+    background-color: rgb(255,210,93);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    position: absolute;
+    top: 500px;
+    left: 346px;
+    opacity: 0;
+    animation: textd-a 1s ease 0.2s 1 both;
+    z-index: 5;
+}
+.open-vip a:first-of-type:hover{
+    background:#fbd74f;
+    color:#9c701e;
+}
+.open-vip a:nth-child(2):hover{
+    background:#fee588;
+    border-color:#fee588;
+}
+.section1-person{
+    background:url("./img/figure_1.png") no-repeat;
+    width: 1300px;
+    height: 656px;
+    position: absolute;
+    top: 177px;
+    right: -10px ;
+    z-index: 4;
+}
+.star{
+    width: 36px;
+    height: 36px;
+    background: url("./img/sprites_index.png") no-repeat -524px -450px;
+    position: absolute;
+    top: 335px;
+    left: 1030px;
+    opacity: 0;
+    animation: starbling 0.5s ease 0.1s infinite alternate both;
+}
+@keyframes starbling{
+    0%{
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+.section2{
+    background: url("./img/bg_2.jpg") no-repeat center top;
+    height: 820px;
+    overflow: hidden;
+    /*border: 1px solid white;*/
+    position: relative;
+    transform-style: preserve-3d;
+    perspective:1000px;
+}
+.section2 a:first-of-type span{
+    width: 120px;
+    height: 130px;
+    line-height: 130px;
+    display: inline-block;
+    background: url("./img/sprites_index.png") no-repeat -682px -438px;
+    /*border: 1px solid saddlebrown;*/
+}
+.section2-a-fir-animate{ animation:icon 1s ease 0.2s 1 both;}
+.section2 a:first-of-type{
+    position: absolute;
+    top: 260px;
+    left: 70px;
+    transform-origin: bottom;
+    z-index: 4;
+    opacity: 0;
+
+}
+
+@keyframes icon {
+    0%{
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.section2-text2-animate{animation: textd-a 1s ease 0.2s 1 both;}
+.section2-text2{
+    background: url("./img/sprites_index.png") no-repeat 0px -272px;
+    width: 368px;
+    height: 176px;
+    position: absolute;
+    top: 270px;
+    left: 200px;
+    opacity: 0;
+    z-index: 4;
+}
+.section2-person{
+    background: url("./img/figure_2.png") no-repeat;
+    width: 950px;
+    height: 744px;
+    position: absolute;
+    left: 150px;
+    top: 85px;
+    z-index: 3;
+}
+.section2-li1-animate{animation: icon1 0.5s ease 0.2s 1;}
+.section2-li2-animate{animation: icon2 0.5s ease 0.2s 1;}
+.section2-li3-animate{animation: icon3 0.5s ease 0.2s 1;}
+.section2-li4-animate{animation: icon4 0.5s ease 0.2s 1;}
+.section2-li5-animate{animation: icon5 0.5s ease 0.2s 1;}
+.section2-li6-animate{animation: icon6 0.5s ease 0.2s 1;}
+.section2-li7-animate{animation: icon6 0.5s ease 0.2s 1;}
+.section2-li8-animate{animation: icon6 0.5s ease 0.2s 1;}
+.section2-li9-animate{animation: icon6 0.5s ease 0.2s 1;}
+.section2 ul li:nth-child(1){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat -115px 0;
+    z-index: 2;
+    position: absolute;
+    top: 320px;
+    left: 920px;
+
+}
+.section2 ul li:nth-child(2){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat -115px -111px;
+    z-index: 2;
+    position: absolute;
+    top: 335px;
+    left: 760px;
+}
+.section2 ul li:nth-child(3){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat -115px -219px;
+    z-index: 4;
+    position: absolute;
+    top: 380px;
+    left: 580px;
+}
+.section2 ul li:nth-child(4){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat -115px -331px;
+    z-index: 4;
+    position: absolute;
+    top: 480px;
+    left: 450px;
+}
+.section2 ul li:nth-child(5){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat -115px -440px;
+    z-index: 4;
+    position: absolute;
+    top: 590px;
+    left: 550px;
+}
+.section2 ul li:nth-child(6){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat 0px -551px;
+    z-index: 4;
+    position: absolute;
+    top: 615px;
+    left: 730px;
+}
+.section2 ul li:nth-child(7){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat 0px -663px;
+    z-index: 4;
+    position: absolute;
+    top: 610px;
+    left: 950px;
+}
+.section2 ul li:nth-child(8){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat 0px -773px;
+    z-index: 4;
+    position: absolute;
+    top: 520px;
+    left: 1155px;
+}
+.section2 ul li:nth-child(9){
+    display: inline-block;
+    width: 105px;
+    height: 106px;
+    background: url("./img/sprites_function_feature.png") no-repeat 0px -883px;
+    z-index: 4;
+    position: absolute;
+    top: 360px;
+    left: 1075px;
+}
+@keyframes icon1 {
+    0%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px 0;
+    }
+    15%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px 0;
+    }
+    25%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("sprites_function_feature.png") no-repeat -115px 0;
+    }
+    35%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px 0;
+    }
+    45%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px 0;
+    }
+    55%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px 0px;
+    }
+    65%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px 0px;
+    }
+    75%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px 0px;
+    }
+    85%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px 0px;
+    }
+    100%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px 0;
+    }
+}
+@keyframes icon2 {
+
+    0%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -111px;
+    }
+    15%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -111px;
+    }
+    25%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -111px;
+    }
+    35%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -111px;
+    }
+    45%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -111px;
+    }
+    55%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -111px;
+    }
+    65%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -111px;
+    }
+    75%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -111px;
+    }
+    85%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -111px;
+    }
+    100%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -111px;
+    }
+}
+@keyframes icon3 {
+    0%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -219px;
+    }
+    15%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -219px;
+    }
+    25%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -219px;
+    }
+    35%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -219px;
+    }
+    45%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -219px;
+    }
+    55%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -219px;
+    }
+    65%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -219px;
+    }
+    75%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -219px;
+    }
+    85%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -219px;
+    }
+    100%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -219px;
+    }
+}
+@keyframes icon4 {
+    0%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -331px;
+    }
+    15%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -331px;
+    }
+    25%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -331px;
+    }
+    35%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -331px;
+    }
+    45%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -331px;
+    }
+    55%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -331px;
+    }
+    65%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("sprites_function_feature.png") no-repeat -115px -331px;
+    }
+    75%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -331px;
+    }
+    85%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -331px;
+    }
+    100%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -331px;
+    }
+}
+@keyframes icon5 {
+    0%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -440px;
+    }
+    15%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -440px;
+    }
+    25%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -440px;
+    }
+    35%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -440px;
+    }
+    45%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -440px;
+    }
+    55%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -440px;
+    }
+    65%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -440px;
+    }
+    75%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -440px;
+    }
+    85%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -440px;
+    }
+    100%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -115px -440px;
+    }
+}
+@keyframes icon6 {
+    0%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -551px;
+    }
+    15%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -551px;
+    }
+    25%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -551px;
+    }
+    35%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -551px;
+    }
+    45%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -551px;
+    }
+    55%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -551px;
+    }
+    65%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -551px;
+    }
+    75%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -551px;
+    }
+    85%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -551px;
+    }
+    100%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -551px;
+    }
+}
+@keyframes icon7 {
+    0%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -663px;
+    }
+    15%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -663px;
+    }
+    25%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -663px;
+    }
+    35%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -663px;
+    }
+    45%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -663px;
+    }
+    55%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -663px;
+    }
+    65%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -663px;
+    }
+    75%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -663px;
+    }
+    85%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -663px;
+    }
+    100%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0 -663px;
+    }
+}
+@keyframes icon8 {
+    0%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -773px;
+    }
+    15%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -773px;
+    }
+    25%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -773px;
+    }
+    35%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -773px;
+    }
+    45%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -773px;
+    }
+    55%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -773px;
+    }
+    65%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -773px;
+    }
+    75%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -773px;
+    }
+    85%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -773px;
+    }
+    100%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -773px;
+    }
+}
+@keyframes icon9 {
+    0%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -883px;
+    }
+    15%{
+        z-index: 2;
+        position: absolute;
+        top: 320px;
+        left: 920px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -883px;
+    }
+    25%{
+        z-index: 2;
+        position: absolute;
+        top: 335px;
+        left: 760px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -883px;
+    }
+    35%{
+        z-index: 4;
+        position: absolute;
+        top: 380px;
+        left: 580px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -883px;
+    }
+    45%{
+        z-index: 4;
+        position: absolute;
+        top: 480px;
+        left: 450px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -883px;
+    }
+    55%{
+        z-index: 4;
+        position: absolute;
+        top: 590px;
+        left: 550px;
+        background: url("./img/sprites_function_feature.png") no-repeat -117px -883px;
+    }
+    65%{
+        z-index: 4;
+        position: absolute;
+        top: 615px;
+        left: 730px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -883px;
+    }
+    75%{
+        z-index: 4;
+        position: absolute;
+        top: 610px;
+        left: 950px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -883px;
+    }
+    85%{
+        z-index: 4;
+        position: absolute;
+        top: 520px;
+        left: 1155px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -883px;
+    }
+    100%{
+        z-index: 4;
+        position: absolute;
+        top: 360px;
+        left: 1075px;
+        background: url("./img/sprites_function_feature.png") no-repeat 0px -883px;
+    }
+}
+.section3{
+    background: url("./img/bg_3.jpg") no-repeat center top;
+    height: 779px;
+    /*border: 1px solid white;*/
+    position: relative;
+    overflow: hidden;
+}
+.section3 a:first-of-type span{
+    display: inline-block;
+    width: 120px;
+    height: 130px;
+    line-height: 130px;
+    background: url("./img/sprites_index.png") no-repeat -682px -560px;
+}
+.section3-a1-animate{animation:icon 1s ease 0.2s 1 both;}
+.section3 a:first-of-type{
+    position: absolute;
+    top: 330px;
+    left: 70px;
+    transform-origin: bottom;
+    z-index: 4;
+    opacity: 0;
+
+}
+.section3-text2-animate{animation: textd-a 1s ease 0.2s 1 both;}
+.section3 .section3-text2{
+    background: url("./img/sprites_index.png") no-repeat 0px -441px;
+    width: 368px;
+    height: 176px;
+    position: absolute;
+    top: 330px;
+    left: 200px;
+    opacity: 0;
+    z-index: 4;
+}
+.section3 .section3-person{
+    background: url("./img/figure_3.png") no-repeat;
+    width: 1210px;
+    height: 721px;
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    z-index: 3;
+}
+.section3 .mask3{
+    background: url("./img/bg_3_mask.png") no-repeat;
+    width: 715px;
+    height: 156px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+}
+.section3 .game-feature li{list-style-type: none}
+/*.section3-game1-animate{animation: game 1s ease 0.2s 1;opacity: 1;}
+.section3-game2-animate{animation: game 1.1s ease 0.2s 1;opacity: 1;}
+.section3-game3-animate{animation: game 1.2s ease 0.2s 1;opacity: 1;}
+.section3-game4-animate{animation: game 1.3s ease 0.2s 1;opacity: 1;}
+.section3-game5-animate{animation: game 1.4s ease 0.2s 1;opacity: 1;}
+.section3-game6-animate{animation: game 1.5s ease 0.2s 1;opacity: 1;}
+.section3-game7-animate{animation: game 1.1s ease 0.2s 1;opacity: 1;}
+.section3-game8-animate{animation: game 1.1s ease 0.2s 1;opacity: 1;}
+.section3-game9-animate{animation: game 1.5s ease 0.2s 1;opacity: 1;}
+.section3-game10-animate{animation: game 1.5s ease 0.2s 1;opacity: 1;}*/
+.section3 .game-feature li{opacity: 0;transform: translateY(604px);transition: all 1s;}
+.section3 .game-feature li:first-of-type{
+    background:url("./img/sprites_game_feature.png") no-repeat 0 0;
+    width: 315px;
+    height: 270px;
+    position: absolute;
+    bottom: -30px;
+    left: 530px;
+    z-index: 7;
+    transform: translateY(604px);
+    opacity: 0;
+}
+.section3 .game-feature li:nth-child(2){
+    background: url("./img/sprites_game_feature2.png") no-repeat -205px -44px;
+    width: 218px;
+    height: 264px ;
+    position: absolute;
+    top: 440px;
+    left: 450px;
+    z-index: 6;
+}
+.section3 .game-feature li:nth-child(3){
+    background: url("./img/sprites_game_feature2.png") no-repeat -428px 0px;
+    width: 218px;
+    height: 264px ;
+    position: absolute;
+    top: 340px;
+    left: 565px;
+    z-index: 6;
+
+}
+.section3 .game-feature li:nth-child(4){
+    background: url("./img/sprites_game_feature.png") no-repeat -400px -253px;
+    width: 232px;
+    height: 350px ;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    z-index: 6;
+
+}
+.section3 .game-feature li:nth-child(5){
+    background: url("./img/sprites_game_feature.png") no-repeat 0px -332px;
+    width: 340px;
+    height: 369px ;
+    position: absolute;
+    top: 296px;
+    left: 630px;
+    z-index: 6;
+
+}
+.section3 .game-feature li:nth-child(6){
+    background: url("./img/sprites_game_feature.png") no-repeat -422px -41px;
+    width: 189px;
+    height: 148px ;
+    position: absolute;
+    top: 590px;
+    left: 830px;
+    z-index: 6;
+
+}
+.section3 .game-feature li:nth-child(7){
+    background: url("./img/sprites_game_feature2.png") no-repeat 0px -396px;
+    width: 441px;
+    height: 371px ;
+    position: absolute;
+    bottom: 30px;
+    left: 550px;
+    z-index: 6;
+
+}
+.section3 .game-feature li:nth-child(8){
+    background: url("./img/sprites_decoration2.png");
+    width: 1173px;
+    height: 604px;
+    position:absolute;
+    left: 326px;
+    top: 220px;
+    z-index: 6;
+
+}
+.section3 .game-feature li:nth-child(9){
+    background: url("./img/sprites_game_feature2.png") no-repeat -16px -115px;
+    width: 197px;
+    height: 141px ;
+    position: absolute;
+    bottom: 50px;
+    right: -15px;
+    z-index: 6;
+
+}
+.section3 .game-feature li:nth-child(10){
+    background: url("./img/sprites_game_feature2.png") no-repeat -11px -24px;
+    width: 123px;
+    height: 159px ;
+    position: absolute;
+    bottom: -18px;
+    right: 0px;
+    z-index: 7;
+}
+/*@keyframes game {
+    0%{
+        transform: translateY(604px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}*/
+@keyframes decoration {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.section4{
+    background: url("./img/bg_4.jpg") no-repeat center top;
+    height: 818px;
+    position: relative;
+    /* border: 1px solid white;*/
+    overflow: hidden;
+}
+.section4-a1-span-animate{animation:icon 1s ease 0.2s 1 both;}
+.section4 a:first-of-type span{
+    width: 120px;
+    height: 130px;
+    line-height: 130px;
+    display: inline-block;
+    background: url("./img/sprites_index.png") no-repeat -682px -680px;
+    /*border: 1px solid saddlebrown;*/
+    position: absolute;
+    top: 360px;
+    left: 66px;
+    z-index: 5;
+    transform-origin: bottom;
+    opacity: 0;
+
+}
+.section4-text2-animate{animation: textd-a 1s ease 0.2s 1 both;}
+.section4 .section4-text2{
+    background: url("./img/sprites_index.png") no-repeat 0px -620px;
+    width: 374px;
+    height: 185px;
+    position: absolute;
+    top: 360px;
+    left: 200px;
+    z-index: 5;
+    opacity: 0;
+
+}
+.section4 .section4-person{
+    height: 703px;
+    width: 1250px;
+    background: url("./img/figure_4.png") no-repeat;
+    position: absolute;
+    top: 160px;
+    left: 80px;
+    z-index: 4;
+}
+.section4 .mask4{
+    width: 750px;
+    height: 150px;
+    background: url("./img/bg_4_mask.png") no-repeat;
+    position: absolute;
+    left: 400px;
+    bottom: 0px;
+    z-index: 5;
+    /*border: 1px solid white;*/
+}
+.section4 ul li{list-style-type: none}
+.section4-li1-animate{animation: life 1s ease 0.2s infinite normal;}
+.section4-li2-animate{animation: life 1.2s ease 0.3s infinite normal;}
+.section4-li3-animate{animation: life 1s ease 0.1s infinite normal;}
+.section4-li4-animate{animation: life 1.3s ease 0.4s infinite normal;}
+.section4-li5-animate{animation: life 1.1s ease 0.2s infinite normal;}
+.section4-li6-animate{animation: life 1.4s ease 0.1s infinite normal;}
+.section4-li7-animate{animation: life 1.2s ease 0.2s infinite normal;}
+.section4-li8-animate{animation: life 1s ease 0.1s infinite normal;}
+.section4 ul li:nth-child(1){
+    background: url("./img/sprites_life_feature.png") no-repeat -32px -15px;
+    width: 87px;
+    height: 123px;
+    position: absolute;
+    top: 200px;
+    left: 590px ;
+
+}
+.section4 ul li:nth-child(2){
+    background: url("./img/sprites_life_feature.png") no-repeat -50px -188px;
+    height: 76px ;
+    width: 58px;
+    position: absolute;
+    top: 130px;
+    left: 800px;
+
+}
+.section4 ul li:nth-child(3){
+    background: url("./img/sprites_life_feature.png") no-repeat -22px -333px;
+    width: 110px;
+    height: 89px;
+    position: absolute;
+    left: 500px;
+    bottom: 220px;
+
+}
+.section4 ul li:nth-child(4){
+    background: url("./img/sprites_life_feature.png") no-repeat -12px -452px;
+    width: 115px;
+    height: 159px;
+    position: absolute;
+    top: 150px;
+    left: 1120px;
+    z-index: 6;
+
+}
+.section4 ul li:nth-child(5){
+    background: url("./img/sprites_life_feature.png") no-repeat 0px -623px;
+    width: 152px;
+    height: 111px;
+    position: absolute;
+    top: 350px;
+    left: 1200px;
+    z-index: 6;
+
+}
+.section4 ul li:nth-child(6){
+    background: url("./img/sprites_life_feature.png") no-repeat 0 -791px;
+    width: 152px;
+    height: 94px;
+    position: absolute;
+    top: 680px;
+    left: 650px;
+    z-index: 6;
+
+}
+.section4 ul li:nth-child(7){
+    background: url("./img/sprites_life_feature.png") no-repeat 0 -900px;
+    width: 152px;
+    height: 160px;
+    position: absolute;
+    top: 650px;
+    right: 150px;
+    z-index: 6;
+
+}
+.section4 ul li:nth-child(8){
+    background: url("./img/sprites_life_feature.png") no-repeat -35px -1098px;
+    width: 88px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 1250px;
+    z-index: 6;
+
+}
+.section4 ul{
+    /*animation:lifes 1.5s ease 0s 1 ;*/
+    opacity: 0;
+    transition: all 1s;
+}
+/*@keyframes lifes {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}*/
+@keyframes life {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(0,10px);
+    }
+    50%{
+        transform: translate(10px,10px);
+    }
+    75%{
+        transform: translate(10px,0px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.section5{
+    background: url("./img/bg_5.jpg") no-repeat center top;
+    height: 749px;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.section5 a:first-of-type span{
+    width: 120px;
+    height: 130px;
+    line-height: 130px;
+    display: inline-block;
+    background: url("./img/sprites_index.png") no-repeat -682px -808px;
+}
+.section5-a1-animate{animation:icon 1s ease 0.2s 1 both;}
+.section5 a:first-of-type{
+    position: absolute;
+    top: 360px;
+    left: 66px;
+    z-index: 5;
+    transform-origin: bottom;
+    opacity: 0;
+
+}
+.section5-text2-animate{animation: textd-a 1s ease 0.2s 1 both;}
+.section5 .section5-text2{
+    background: url("./img/sprites_index.png") no-repeat 0px -820px;
+    width: 374px;
+    height: 185px;
+    position: absolute;
+    top: 360px;
+    left: 200px;
+    z-index: 5;
+    opacity: 0;
+
+}
+.section5 .section5-person{
+    background: url("./img/figure_5.png") no-repeat;
+    width: 570px;
+    height: 689px;
+    z-index: 4;
+    position: absolute;
+    bottom: 0;
+    left: 740px;
+}
+.section5 ul li{
+    list-style-type: none;
+}
+.section5 ul{opacity: 0;transition: all 1s}
+.section5-li1-animate{animation: snow 1s ease 0.2s 1;}
+.section5-li2-animate{animation: snow 1.1s ease 0.3s 1;}
+.section5-li3-animate{animation: snow 1.3s ease 0.4s 1;}
+.section5-li4-animate{ animation: snow 1.2s ease 0.2s 1;}
+.section5-li5-animate{ animation: connacte 1.2s ease 0.2s 2;}
+.section5-li6-animate{animation: connacte 1.2s ease 0.2s 2;}
+.section5 ul li:nth-child(1){
+    background: url("./img/sprites_makeup_feature.png") no-repeat 0 0;
+    width: 91px;
+    height: 105px;
+    position: absolute;
+    top: 248px;
+    left: 1114px;
+    z-index: 5;
+
+}
+.section5 ul li:nth-child(2){
+    background: url("./img/sprites_makeup_feature.png") no-repeat 0 -121px;
+    width:137px ;
+    height: 129px;
+    z-index: 5;
+    position: absolute;
+    bottom: 15px;
+    right: -5px;
+
+}
+.section5 ul li:nth-child(3){
+    background: url("./img/sprites_makeup_feature.png") no-repeat 0 -269px;
+    width:131px ;
+    height: 135px;
+    z-index: 5;
+    position: absolute;
+    bottom: 15px;
+    right: 710px;
+
+}
+.section5 ul li:nth-child(4){
+    background: url("./img/sprites_makeup_feature.png") no-repeat 0 -403px;
+    width:157px ;
+    height: 203px;
+    z-index: 5;
+    position: absolute;
+    bottom: 50px;
+    right: 550px;
+
+}
+.section5 ul li:nth-child(5){
+    background: url("./img/sprites_makeup_feature.png") no-repeat 0 -632px;
+    width:179px ;
+    height: 89px;
+    z-index: 5;
+    position: absolute;
+    bottom: 250px;
+    right: 380px;
+
+}
+.section5 ul li:nth-child(6){
+    background: url("./img/sprites_makeup_feature.png") no-repeat 0 -743px;
+    width:280px ;
+    height: 85px;
+    z-index: 5;
+    position: absolute;
+    bottom: 150px;
+    right: 60px;
+}
+@keyframes connacte {
+    0%{
+        transform: translateZ(100px);
+    }
+    100%{
+        transform: translateZ(0px);
+    }
+}
+@keyframes snow {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(40px,20px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+footer{
+    width: 100%;
+    height: 183px;
+    background-color: rgb(44,46,54);
+    text-align: center;
+}
+footer .footer-nav{
+    margin: 0px auto;
+    width: 1000px;
+    height: 109px;
+    /*border: 1px solid white;*/
+    padding-top: 80px;
+}
+footer .footer-nav dl{
+    width: 108px;
+    height: 87px;
+    /*border: 1px solid saddlebrown;*/
+    float: left;
+    margin-right:25px;
+}
+footer .footer-nav dl:nth-child(1) dt a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 45px;
+    height: 52px;
+    line-height: 52px;
+    background: url("./img/sprites_footer.png") no-repeat -29px -29px;
+}
+footer .footer-nav dl:nth-child(1) dt a:hover{
+    background: url("./img/sprites_footer.png") no-repeat -129px -29px;
+}
+footer .footer-nav dl:nth-child(2) dt a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 45px;
+    height: 52px;
+    line-height: 52px;
+    background: url("./img/sprites_footer.png") no-repeat -25px -130px;
+}
+footer .footer-nav dl:nth-child(2) dt a:hover{
+    background: url("./img/sprites_footer.png") no-repeat -125px -130px;
+}
+footer .footer-nav dl:nth-child(3) dt a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    background: url("./img/sprites_footer.png") no-repeat -25px -225px;
+}
+footer .footer-nav dl:nth-child(3) dt a:hover{
+    background: url("./img/sprites_footer.png") no-repeat -125px -225px;
+}
+footer .footer-nav dl:nth-child(4) dt a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    background: url("./img/sprites_footer.png") no-repeat -25px -323px;
+}
+footer .footer-nav dl:nth-child(4) dt a:hover{
+    background: url("./img/sprites_footer.png") no-repeat -125px -323px;
+}
+footer .footer-nav dl:nth-child(5) dt a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    background: url("./img/sprites_footer.png") no-repeat -25px -424px;
+}
+footer .footer-nav dl:nth-child(5) dt a:hover{
+    background: url("./img/sprites_footer.png") no-repeat -125px -424px;
+}
+footer .footer-nav dl:nth-child(6) dt a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    background: url("./img/sprites_footer.png") no-repeat -25px -524px;
+}
+footer .footer-nav dl:nth-child(6) dt a:hover{
+    background: url("./img/sprites_footer.png") no-repeat -125px -524px;
+}
+footer .footer-nav dl:nth-child(7) dt a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    background: url("./img/sprites_footer.png") no-repeat -25px -624px;
+}
+footer .footer-nav dl:nth-child(7) dt a:hover{
+    background: url("./img/sprites_footer.png") no-repeat -125px -624px;
+}
+footer .footer-nav dl dd a{
+    font-size: 18px;
+    color: rgb(107,106,112);
+    text-decoration: none;
+    font-family: "微软雅黑";
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="canvas" width="600" height="600"  style="background-color: black"></canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById("canvas");
+    var cxt = canvas.getContext("2d");
+
+
+    function clock(){
+        var time = new Date();
+        var seconds= time.getSeconds();
+        var minutes = time.getMinutes();
+        var hours = time.getHours();
+        hours > 12 ? hours-12 : hours;
+        hours += (minutes /60);
+
+
+
+        cxt.clearRect(0, 0, canvas.width, canvas.height);
+
+
+
+        //时钟圆盘
+        cxt.save();
+        cxt.beginPath();
+        cxt.arc(300,300,200,0,Math.PI*2,false);
+        cxt.strokeStyle = "rgb(6,227,252)";
+        cxt.lineWidth =10;
+        cxt.stroke();
+        cxt.closePath();
+        cxt.restore();
+        cxt.clip();
+
+        var img=new Image();
+        img.src = "1.jpg";
+        cxt.drawImage(img,105,100,450,400);
+
+
+
+
+        //时刻度
+        for(var i=0;i<12;i++){
+            cxt.save();
+            cxt.translate(300,300);
+            cxt.rotate(30 * i * Math.PI/180);
+            cxt.strokeStyle = "yellow";
+            cxt.lineWidth = 8;
+            cxt.beginPath();
+            cxt.moveTo(0,-195);
+            cxt.lineTo(0,-175);
+            cxt.stroke();
+            cxt.closePath();
+
+            cxt.restore();
+
+        }
+
+
+        //分刻度
+        for(var j=0;j<60;j++){
+            cxt.save();
+            cxt.translate(300,300);
+            cxt.rotate(6 * j * Math.PI/180);
+            cxt.strokeStyle = "yellow";
+            cxt.lineWidth = 6;
+            cxt.beginPath();
+            cxt.moveTo(0,-195);
+            cxt.lineTo(0,-185);
+            cxt.stroke();
+            cxt.closePath();
+            cxt.restore();
+        }
+
+
+
+
+        //分针
+        cxt.save();
+        cxt.translate(300,300);
+        cxt.rotate(6*minutes*Math.PI/180);
+        cxt.beginPath();
+        cxt.moveTo(0,10);
+        cxt.lineTo(0,-140);
+        cxt.lineWidth = 6;
+        cxt.strokeStyle = "yellow";
+        cxt.stroke();
+        cxt.closePath();
+        cxt.restore();
+
+        ////时针
+        cxt.save();
+        cxt.translate(300,300);
+        cxt.rotate(30*hours*Math.PI/180);
+        cxt.beginPath();
+        cxt.moveTo(0,10);
+        cxt.lineTo(0,-110);
+        cxt.lineWidth = 9;
+        cxt.strokeStyle = "rgb(6,227,252)";
+        cxt.stroke();
+        cxt.closePath();
+        cxt.restore();
+
+        //秒针
+        cxt.save();
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = "red";
+        cxt.translate(300,300);
+        cxt.rotate(6*seconds*Math.PI/180);
+        cxt.beginPath();
+        cxt.moveTo(0,10);
+        cxt.lineTo(0,-170);
+        cxt.stroke();
+        cxt.closePath();
+        cxt.restore();
+        /*cxt.clip()*/
+
+        //秒针上面的圆
+        cxt.save();
+        cxt.translate(300,300);
+        cxt.rotate(6*seconds*Math.PI/180);
+        cxt.beginPath();
+        cxt.arc(0,-150,7,0,2*Math.PI);
+        cxt.fillStyle ="yellow";
+        cxt.fill();
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = "red";
+        cxt.stroke();
+        cxt.closePath();
+        cxt.restore();
+
+
+        //圆盘中心位置的圆
+        cxt.save();
+        cxt.beginPath();
+        cxt.arc(300,300,7,0,2*Math.PI);
+        cxt.fillStyle ="yellow";
+        cxt.fill();
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = "red";
+        cxt.stroke();
+        cxt.closePath();
+        cxt.restore();
+
+
+        cxt.save();
+        var hour1 = time.getHours();
+        hour1 = hour1 < 10 ? "0"+hour1 :hour1;
+        minutes = minutes < 10 ? "0"+minutes : minutes;
+        seconds = seconds < 10 ? "0"+seconds : seconds;
+        var text = hour1 + ":" + minutes +":" + seconds;
+        cxt.font = "20px ‘微软雅黑’";
+        cxt.fillStyle = "blue";
+        cxt.lineWidth = 7;
+        cxt.fillText(text,275,410);
+        cxt.restore();
+
+
+        cxt.font = "20px ‘微软雅黑’";
+        cxt.fillStyle = "blue";
+        cxt.strokeStyle = "white";
+        cxt.lineWidth = 1;
+        cxt.fillText("Made in China",245,440);
+        cxt.strokeText("Made In China", 245, 440)
+
+
+
+    }
+    clock();
+    setInterval(clock,1000)
+
+
+
+
+
+</script>
+</body>
+</html>

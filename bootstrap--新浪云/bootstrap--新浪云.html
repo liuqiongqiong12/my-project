@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <title>新浪云</title>
+    <style>
+        body{color: rgb(109,109,109)；font-family:'微软雅黑';}
+        #mynav{background-color: rgb(8,131,205)}
+        #mynav .navlist li a{color: white;font-weight: bold}
+        #mynav .alink span{color: white;font-weight: bold}
+        #mynav .alink a{color: white;}
+        #mycarousel{margin-top: 50px}
+        #mybtn span{background-color: white;}
+        #mybtn{background-color: transparent;border: none}
+        .mymain1{padding-top: 50px;color: rgb(109,109,109)}
+        .mymain1 p,.mymain1 li{font-size: 16px;font-family:'微软雅黑'}
+        .mymain1 ul{ padding-left: 0; }
+        .mymain1 a{margin-left: -17px;}
+        /*.img-text{border: 1px solid salmon;text-indent: 55px}*/
+        .img-text p:nth-child(1){
+            color: rgb(18,163,244);
+            font-size: 40px;
+        }
+        .main-bottom dd,.main-bottom p{
+            font-size: 15px;
+        }
+        .success-demo{
+            /*border: 1px solid salmon;*/
+            /*width: 655px;*/
+            /*margin-left:-70px;*/
+            margin-top: 90px;
+            word-wrap: break-word;
+        }
+        .success-demo p{
+            font-size: 17px;
+            font-family:'微软雅黑';
+        }
+        .mylist{font-size: 15px;color: rgb(94,166,195)}
+        .list{margin-top: 25px}
+        footer{padding-top: 30px;font-size: 16px;border-top: 1px solid #cccccc;margin-top: 70px}
+        @media (max-width: 768px) {
+            .alink{
+                position:absolute;
+                top:6px;
+                left:49%;
+            }
+            .myimg{
+                width: 100px;
+                height: 100px;
+            }
+            h2,h3,h4{font-size: 16px;}
+            .mymain1 p,.mymain1 li{font-size: 12px;}
+            .img-text p:nth-child(1){font-size: 12px;}
+            .main-bottom dd,.main-bottom p{font-size: 12px;}
+            .success-demo p{
+                font-size: 12px;
+            }
+            .myfooter p{font-size: 12px}
+            li{font-size: 12px;}
+            .success-demo{
+                word-wrap: break-word;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar mynav navbar-default navbar-fixed-top" id="mynav">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#"><img src="img--新浪云/logo.png"/></a>
+            <button class="navbar-toggle" id="mybtn" data-target=".navbar-collapse" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-left">
+            <ul class="nav navbar-nav navlist">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">产品</a></li>
+                <li><a href="#">支持中心</a></li>
+                <li><a href="#">价格</a></li>
+                <li><a href="#">成功案例</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+        </div>
+        <div class="nav navbar-nav navbar-right alink">
+            <a href="#" class="navbar-text navbar-link">微博登录</a>
+            <span class="navbar-text navbar-link">|</span>
+            <a href="#" class="navbar-text navbar-link">微博注册</a>
+        </div>
+    </div>
+</nav>
+<article>
+    <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <ol class="carousel-indicators"> 
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active"><img src="img--新浪云/1.jpg"/></div>
+            <div class="item"><img src="img--新浪云/2.jpg"/></div>
+            <div class="item"><img src="img--新浪云/1.jpg"/></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mymain1">
+        <div class="col-md-4 col-xs-12 text-center">
+            <img src="img--新浪云/cont1.png" class="myimg"/>
+            <div class="img-text">
+                <p >SAE</p>
+                <p>云应用</p>
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-12">
+            <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+            <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需总多服务，国内最好的PaaS云计算平台</p>
+            <div class="col-md-6 col-xs-6">
+                <ul>
+                    <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                    <li>沙箱技术隔离应用</li>
+                    <li>无需运维管理与架构设计</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-lg">了解详情</a>
+            </div>
+            <div class="col-md-6 col-xs-6">
+                <ul>
+                    <li>防火墙防止攻击</li>
+                    <li>99.95%SLA，首批可信云认证</li>
+                    <li>免费配额，零成本创业</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="row mymain1">
+            <div class="col-md-4 col-md-push-8 text-right col-xs-12 text-center">
+                <img src="img--新浪云/cont2.png" class="myimg"/>
+                <div class="img-text">
+                    <p >SAE</p>
+                    <p>云应用</p>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-pull-4 col-xs-12">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需总多服务，国内最好的PaaS云计算平台</p>
+                <div class="col-md-6 col-xs-6">
+                    <ul>
+                        <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                        <li>沙箱技术隔离应用</li>
+                        <li>无需运维管理与架构设计</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-lg">了解详情</a>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <ul>
+                        <li>防火墙防止攻击</li>
+                        <li>99.95%SLA，首批可信云认证</li>
+                        <li>免费配额，零成本创业</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mymain1">
+            <div class="col-md-4 col-xs-12 text-center">
+                <img src="img--新浪云/cont3.png" class="myimg"/>
+                <div class="img-text">
+                    <p >SAE</p>
+                    <P>云应用</P>
+                </div>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需总多服务，国内最好的PaaS云计算平台</p>
+                <div class="col-md-6 col-xs-6">
+                    <ul>
+                        <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                        <li>沙箱技术隔离应用</li>
+                        <li>无需运维管理与架构设计</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-lg">了解详情</a>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <ul>
+                        <li>防火墙防止攻击</li>
+                        <li>99.95%SLA，首批可信云认证</li>
+                        <li>免费配额，零成本创业</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mymain1">
+            <div class="col-md-4 col-md-push-8 text-right col-xs-12 text-center">
+                <img src="img--新浪云/cont4.png" class="myimg"/>
+                <div class="img-text">
+                    <p >SAE</p>
+                    <P>云应用</P>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-pull-4 col-xs-12">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需总多服务，国内最好的PaaS云计算平台</p>
+                <div class="col-md-6 col-xs-6">
+                    <ul>
+                        <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                        <li>沙箱技术隔离应用</li>
+                        <li>无需运维管理与架构设计</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-lg">了解详情</a>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <ul>
+                        <li>防火墙防止攻击</li>
+                        <li>99.95%SLA，首批可信云认证</li>
+                        <li>免费配额，零成本创业</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mymain1">
+            <div class="col-md-4 col-xs-12 text-center">
+                <img src="img--新浪云/cont5.png" class="myimg"/>
+                <div class="img-text">
+                    <p >SAE</p>
+                    <P>云应用</P>
+                </div>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需总多服务，国内最好的PaaS云计算平台</p>
+                <div class="col-md-6 col-xs-6">
+                    <ul>
+                        <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                        <li>沙箱技术隔离应用</li>
+                        <li>无需运维管理与架构设计</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-lg">了解详情</a>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <ul>
+                        <li>防火墙防止攻击</li>
+                        <li>99.95%SLA，首批可信云认证</li>
+                        <li>免费配额，零成本创业</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div><img src="img--新浪云/video.png" class="img-responsive"/></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h3>产品特色</h3>
+            </div>
+        </div>
+        <div class="row main-bottom">
+            <div class="col-md-3 col-xs-6">
+                <dl class="text-center">
+                    <dt><img src="img--新浪云/icon1.png"/></dt>
+                    <dd>安全可靠</dd>
+                </dl>
+                <p>多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站</p>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <dl class="text-center">
+                    <dt><img src="img--新浪云/icon2.png"/></dt>
+                    <dd>安全可靠</dd>
+                </dl>
+                <p>多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站</p>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <dl class="text-center">
+                    <dt><img src="img--新浪云/icon3.png"/></dt>
+                    <dd>安全可靠</dd>
+                </dl>
+                <p>多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站</p>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <dl class="text-center">
+                    <dt><img src="img--新浪云/icon4.png"/></dt>
+                    <dd>安全可靠</dd>
+                </dl>
+                <p>多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <h3>成功案例</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-xs-12">
+                <img src="img--新浪云/typical.png" class="img-responsive"/>
+            </div>
+            <div class="col-md-7 success-demo col-xs-12">
+                <p class="text-left">SAE作为公有云服务，其整体构架具有高可靠性和高安全性，并具备专业的团队来负责安全及运营维护工作，因而极大地简化了项目组部署和维护工作，使得项目组能集中精力于核心业务的开发，为用户提供更好的体验</p>
+            </div>
+        </div>
+        <div class="row list text-left">
+            <div class="col-md-2 col-xs-6">
+                <h4>产品</h4>
+                <ul class="list-unstyled mylist">
+                    <li>云应用SAE</li>
+                    <li>云应用SAE</li>
+                    <li>云应用SAE</li>
+                    <li>云应用SAE</li>
+                    <li>云应用SAE</li>
+                </ul>
+            </div>
+            <div class="col-md-2 text-left col-xs-6">
+                <h4>支持中心</h4>
+                <ul class="list-unstyled mylist">
+                    <li>产品文档</li>
+                    <li>常见问题</li>
+                    <li>工单</li>
+                    <li>账户等级</li>
+                    <li>新浪云论坛</li>
+                    <li>学习资料</li>
+                    <li>联系我们</li>
+                </ul>
+            </div>
+            <div class="col-md-2 text-left col-xs-6">
+                <h4>成功案例</h4>
+                <ul class="list-unstyled mylist">
+                    <li>游戏</li>
+                    <li>移动</li>
+                    <li>教育</li>
+                    <li>金融</li>
+                    <li>社交</li>
+                    <li>传统行业</li>
+                </ul>
+            </div>
+            <div class="col-md-2 text-left col-xs-6">
+                <h4>关于我们</h4>
+                <ul class="list-unstyled mylist">
+                    <li>招聘信息</li>
+                    <li>备案指引</li>
+                    <li>用户协议</li>
+                    <li>信息举报</li>
+                </ul>
+            </div>
+            <div class="col-md-2 text-left col-xs-6">
+                <h4>关于新浪云</h4>
+                <p>掌上SAE客户端</p>
+                <div><img src="img--新浪云/sao.png"  class="img-responsive"/></div>
+            </div>
+            <div class="col-md-2 text-left col-xs-6">
+                <h4>可信云认证</h4>
+                <div><img src="img--新浪云/kexinyun.png"  class="img-responsive"/></div>
+            </div>
+        </div>
+    </div>
+</article>
+<footer class="text-center myfooter">
+    <p>Copyright @ 1996-2015 SINA Corporation All Right Reserved.京ICP证000007-104</p>
+</footer>
+<script type="text/javascript" src="./script/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./script/bootstrap.min.js"></script>
+</body>
+</html>
